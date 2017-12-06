@@ -1,0 +1,203 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: roboto;
+  }
+#container{
+    width: 970px;
+    background-color: #eeeced;
+    margin: auto;
+	font-family: roboto;
+}
+.container-fixed{
+    width: 100%;
+    background-color: #eeeced;
+    height: 100px;
+}
+.container-fixed nav a img{
+    margin-left: 40px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    overflow: hidden;
+}
+li {
+    float: right;
+}
+li a {
+    padding: 10px 20px;
+    background-color:transparent;
+    text-decoration: none;
+    color: gray;
+}
+li a :hover{
+    color: #cf3161;
+}
+li a :link{
+    color: #cf3161;
+}
+#display{
+    width:100%;
+    height:500px;
+}
+#abt-display{
+    width:100%;
+    height:250px;
+}
+#abt-display img{
+    width:100%;
+    height:250px;
+}
+#display img{
+    width:100%;
+    height: 500px;
+}
+#product{
+    width:100%;
+    height:250px;
+    background-color:#eeeced ;
+    margin-top: 20px;
+    margin: auto;
+}
+#product h3 {
+    color: #cf3161;
+    font-size: large;
+}
+#product p {
+    color: gray;
+    font-size: small;
+}
+#text{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right:50px; 
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+#yogurt{
+    margin-left: 20px;
+    width:30%;
+    height: 250px;
+    display: inline-block;
+}
+#yogurt img{
+    width: 335px;
+    height: 335px;
+}
+#icons{
+    width:100%;
+    height:120px;
+    background-color: #c8cd42;
+    display: flex;
+}
+#icons figure{
+   width: 25%;
+   text-align: center;
+   margin-top: 20px;
+   color: white;
+}
+#icons figure img{
+	height: 50px;
+    width: 50px;
+}
+#icons a :hover{
+    background-color: #b4b83b;
+    /*attempt at studying inhertance with selectors*/
+}
+footer{
+    width:100%;
+    height:150px;
+    background-color: #cf3161;
+    text-align: center;
+    color: white;
+    font-size: x-small;
+}
+footer figure{
+    display: inline-block;
+    padding: 8px;
+    margin-top: 20px;
+}
+footer figure img{
+    border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+footer figure img{
+	height: 30px;
+    width: 30px;
+}
+/*Responsive design starts here with 5 breakpoints*/
+@media screen and (max-width:969px) {
+    /*Break point 1*/
+    #container {
+        width:100%;
+    }
+    #text {
+        width:50%;
+    }
+    #yogurt {
+        widows: 40%;
+    }
+    img {
+        width:100%;
+    } 
+}
+@media screen and (max-width:859px) {
+    /*Break point 2*/
+    #container {
+        width:100%;
+    }
+    #text {
+        width:40%;
+    }
+    #yogurt {
+        widows: 30%;
+    }
+    img {
+        width:100%;
+    } 
+}
+@media screen and (max-width:720px) {
+    /*Break point 3*/
+    #container {
+        width:100%;
+    }
+    #text {
+        width:30%;
+    }
+    #yogurt {
+        widows: 20%;
+    }
+    img {
+        width:100%;
+    } 
+}
+@media screen and (max-width:640px) {
+    /*Break point 4*/
+    #text {
+        width:20%;
+    }
+    #yogurt {
+        width: 10%;
+    }
+    img {
+        width:100%;
+    } 
+}
+@media screen and (max-width:555px) {
+    /*Break point 5*/
+    #container {
+        width:555px;
+    }
+    #text {
+        width:20%;
+    }
+    #yogurt {
+        width: 5%;
+    }
+}
