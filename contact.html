@@ -23,21 +23,32 @@
                       </ul>
                 </nav>
         </div>
-        <div id="product">
+        <div id="cttproduct">
             <div id="text">
-            <h3>We'd love to hear from you</h3>
+            <h3>We'd love to hear from you</h3><br>
             <form action="" method="post">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <textarea name="" id="" cols="20" rows="2"></textarea>
-                <input type="submit">
-                
+                Full Name* :<br>
+                <input type="text"><br>
+                Address :<br>
+                <input type="text"><br>
+                Postcode : <br>
+                <input type="text"><br>
+                City* : <br>
+                <input type="text"><br>
+                Country* :<br>
+                <input type="text"><br>
+                Email* : <br>
+                <input type="text"><br>
+                Comment* :<br>
+                <textarea name="" id="" cols="20" rows="2"></textarea><br>
+                <input type="submit" value="Submit">
             </form>
-            </div>
+            </div><hr>
+            <br>
+            <h3>Where we are :</h3>
+            <br>
+            <br>
+            <div id="map"></div>
         </div>
         <div id="icons">
                <figure class="1">
@@ -82,6 +93,17 @@
             &copy 2023 Freeeze. All Rights Reserved.
         </footer>
     </div>
-    
+    <script>
+            function myMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(60.167200, 24.922306),
+                zoom: 10,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            }
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            }
+            </script>
+            
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBIlxpE2BeEBV-_6tfY9G923IujpGUXdk&callback=myMap"></script>
 </body>
 </html>
