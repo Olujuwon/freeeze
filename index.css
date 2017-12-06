@@ -88,6 +88,18 @@ li a :link{
     width: 335px;
     height: 335px;
 }
+#cttproduct{
+    width:100%;
+    height:500px;
+    background-color:#eeeced ;
+    margin: auto;
+    font-family: roboto;
+    font-size: small;
+}
+#cttproduct h3 {
+    color: #cf3161;
+    font-size: large;
+}
 #icons{
     width:100%;
     height:120px;
