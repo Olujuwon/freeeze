@@ -29,15 +29,14 @@ li {
 }
 li a {
     padding: 10px 20px;
-    background-color:transparent;
+    /*background-color:transparent;*/
     text-decoration: none;
     color: gray;
 }
-li a :hover{
+
+nav li a:hover{
     color: #cf3161;
-}
-li a :link{
-    color: #cf3161;
+    text-decoration: none;
 }
 #display{
     width:100%;
